@@ -66,6 +66,6 @@ class Client:
         await writer.wait_closed()
 
 if __name__ == '__main__':
-    client_id = 1  # Измените для каждого клиента
+    client_id = 1  # Порядовый номер клиента
     client = Client(client_id)
     asyncio.run(client.connect_to_server())
